@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Orçamento de Alianças</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gerador de Orçamento de Alianças</h1>
+    
+    <label for="quantidadeModelos">Quantos modelos você deseja incluir no orçamento?</label>
+    <input type="number" id="quantidadeModelos" name="quantidadeModelos" min="1" value="1" onchange="atualizarModelos()"> <!-- Valor inicial 1 -->
+    <br><br>
+
+    <div id="modelosContainer">
+        <!-- Container para os modelos de alianças, que será preenchido com a função JavaScript -->
+    </div>
+
+    <input type="button" value="Gerar Orçamento" onclick="gerarOrcamento()">
+    
+    <h2>Texto do Orçamento:</h2>
+    <textarea id="resultado" rows="10" cols="50"></textarea>
+
+    <button id="copyButton">Copiar para Área de Transferência</button>
+
+    <script src="main.js"></script>
+</body>
+</html>
